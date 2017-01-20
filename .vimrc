@@ -6,6 +6,11 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'easymotion/vim-easymotion'
+"Plugin 'jiangmiao/auto-pairs'
+Plugin 'Townk/vim-autoclose'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-airline/vim-airline'
@@ -44,4 +49,10 @@ inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
 
 colorscheme jellybeans
+
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
+let g:NERDTreeDirArrowExpandable = '>'
+let g:NERDTreeDirArrowCollapsible = 'v'
+
+"hi Normal ctermbg=none
+"highlight NonText ctermbg=none
