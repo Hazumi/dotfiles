@@ -75,10 +75,10 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 一 (メイン)
-bindsym $mod+2 workspace 二 (コード)
-bindsym $mod+3 workspace 三 (ウェブ)
-bindsym $mod+4 workspace 四 (音楽)
+bindsym $mod+1 workspace 一
+bindsym $mod+2 workspace 二
+bindsym $mod+3 workspace 三
+bindsym $mod+4 workspace 四
 bindsym $mod+5 workspace 五
 bindsym $mod+6 workspace 六
 bindsym $mod+7 workspace 七
@@ -87,10 +87,10 @@ bindsym $mod+9 workspace 九
 bindsym $mod+0 workspace 十
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 一 (メイン)
-bindsym $mod+Shift+2 move container to workspace 二 (コード)
-bindsym $mod+Shift+3 move container to workspace 三 (ウェブ)
-bindsym $mod+Shift+4 move container to workspace 四 (音楽)
+bindsym $mod+Shift+1 move container to workspace 一
+bindsym $mod+Shift+2 move container to workspace 二
+bindsym $mod+Shift+3 move container to workspace 三
+bindsym $mod+Shift+4 move container to workspace 四
 bindsym $mod+Shift+5 move container to workspace 五
 bindsym $mod+Shift+6 move container to workspace 六
 bindsym $mod+Shift+7 move container to workspace 七
