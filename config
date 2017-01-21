@@ -1,7 +1,10 @@
 set $mod Mod1
 set $mod2 Mod4
 
-font pango: Source Han Sans TW 10
+#font pango: Source Han Sans TW 10
+#font pango: Source Code Pro 10
+#font pango: DejaVu Sans Mono 10
+font pango: Terminus 10 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -9,10 +12,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
-#
+# 
 bindsym $mod+o exec google-chrome
 bindsym $mod+i exec atom
-bindsym $mod+m exec
 
 # kill focused window
 bindsym $mod+q kill
@@ -170,15 +172,15 @@ client.background       #ffffff
 bar {
   status_command i3status
   tray_output primary
-  position top
+  position bottom
 
   colors {
     background $darkest
-    statusline $text
-    separator $text
+    statusline $blue
+    separator $blue
 #border, background, text
-    focused_workspace  $darkest $darkest $highlight
-    active_workspace   $darkest $darkest $text
+    focused_workspace  $darkest $darkest $blue
+    active_workspace   $darkest $darkest $blue
     inactive_workspace $darkest $darkest $text
     urgent_workspace   $highlight $darkest $highlight
     binding_mode       $darkest $darkest $text
