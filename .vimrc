@@ -6,6 +6,13 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'skammer/vim-css-color'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'dracula/vim'
+Plugin 'morhetz/gruvbox'
+
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'easymotion/vim-easymotion'
@@ -48,8 +55,9 @@ inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
 
-colorscheme jellybeans
-
+colorscheme dracula
+let g:airline_theme='dracula'
+let g:airline#extensions#tabline#enabled = 1
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
 let g:NERDTreeDirArrowExpandable = '>'
 let g:NERDTreeDirArrowCollapsible = 'v'
