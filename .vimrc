@@ -61,6 +61,7 @@ inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
 
+colorscheme dracula
 colorscheme gruvbox
 
 let g:airline_theme='dracula'
