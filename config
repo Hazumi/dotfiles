@@ -1,10 +1,7 @@
 set $mod Mod1
 set $mod2 Mod4
 
-#font pango: Source Han Sans TW 10
-#font pango: Source Code Pro 10
-#font pango: DejaVu Sans Mono 10
-font pango: Terminus 10 
+font pango: Terminus 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -12,7 +9,6 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
-# 
 bindsym $mod+o exec google-chrome
 bindsym $mod+i exec atom
 
@@ -79,6 +75,10 @@ bindsym $mod+1 workspace 一
 bindsym $mod+2 workspace 二
 bindsym $mod+3 workspace 三
 bindsym $mod+4 workspace 四
+#bindsym $mod+1 workspace 一 (メイン)
+#bindsym $mod+2 workspace 二 (コード)
+#bindsym $mod+3 workspace 三 (ウェブ)
+#bindsym $mod+4 workspace 四 (音楽)
 bindsym $mod+5 workspace 五
 bindsym $mod+6 workspace 六
 bindsym $mod+7 workspace 七
@@ -91,6 +91,10 @@ bindsym $mod+Shift+1 move container to workspace 一
 bindsym $mod+Shift+2 move container to workspace 二
 bindsym $mod+Shift+3 move container to workspace 三
 bindsym $mod+Shift+4 move container to workspace 四
+#bindsym $mod+Shift+1 move container to workspace 一 (メイン)
+#bindsym $mod+Shift+2 move container to workspace 二 (コード)
+#bindsym $mod+Shift+3 move container to workspace 三 (ウェブ)
+#bindsym $mod+Shift+4 move container to workspace 四 (音楽)
 bindsym $mod+Shift+5 move container to workspace 五
 bindsym $mod+Shift+6 move container to workspace 六
 bindsym $mod+Shift+7 move container to workspace 七
@@ -135,15 +139,16 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 focus_follows_mouse no
 
-#new_window pixel 3
+new_window pixel 2
 bindsym $mod+t border normal 1
 
-hide_edge_borders both
+#hide_edge_borders both
 
-exec --no-startup-id xsetroot -solid "#282c34"
+#exec --no-startup-id xsetroot -solid "#282c34"
+#exec --no-startup-id xsetroot -solid "#272a33"
+exec --no-startup-id xsetroot -solid "#282828"
 
 # variables-colors
-set $bgc #282c34
 
 set $base #52438b
 set $green #00b200
@@ -157,13 +162,16 @@ set $dark #41356f
 set $darker #272a33
 set $darkest #1c1e25
 
-set $text #afb1b6
-set $highlight #00cc00
+set $bg #282828
+
+set $text #333333
+set $gray #cccccc
+set $gray-dark #777777
 
 # class                 border  backgr. text    indicator
-client.focused          $base $base $blue $base
-client.focused_inactive $dark $dark $green $dark
-client.unfocused        $dark $dark $green $dark
+client.focused          $blue $blue $base $blue
+client.focused_inactive $dark $dark $blue $bg
+client.unfocused        $dark $dark $lightest $bg
 client.urgent           #2f343a #222222 #ffffff #900000
 client.placeholder      #000000 #222222 #ffffff #000000
 
@@ -175,14 +183,14 @@ bar {
   position bottom
 
   colors {
-    background $darkest
+    background $dark
     statusline $blue
     separator $blue
-#border, background, text
-    focused_workspace  $darkest $darkest $blue
-    active_workspace   $darkest $darkest $blue
-    inactive_workspace $darkest $darkest $text
-    urgent_workspace   $highlight $darkest $highlight
-    binding_mode       $darkest $darkest $text
+                       #border, background, text
+    focused_workspace  $blue $light #ffffff
+    active_workspace   $dark $dark #ffffff
+    inactive_workspace $dark $dark #ffffff
+    urgent_workspace   $base $base $blue
+    binding_mode       $base $base $blue
    }
 }
