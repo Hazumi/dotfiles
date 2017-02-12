@@ -6,11 +6,15 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-surround'
+"Syntax
+Plugin 'othree/html5.vim'
+Plugin 'othree/yajs.vim'
+Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'skammer/vim-css-color'
 Plugin 'hail2u/vim-css3-syntax'
+Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'dracula/vim'
+
 Plugin 'morhetz/gruvbox'
 
 Plugin 'nathanaelkane/vim-indent-guides'
@@ -18,10 +22,12 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'easymotion/vim-easymotion'
 "Plugin 'jiangmiao/auto-pairs'
 "Plugin 'Townk/vim-autoclose'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+"Plugin 'Townk/vim-autoclose'
+"Plugin 'vim-scripts/closetag.vim'
 Plugin 'vim-scripts/HTML-AutoCloseTag'
 Plugin 'alvan/vim-closetag'
 Plugin 'scrooloose/nerdTree'
@@ -61,7 +67,6 @@ inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
 
-colorscheme dracula
 colorscheme gruvbox
 
 let g:airline_theme='dracula'
