@@ -1,5 +1,10 @@
 syntax on
 set t_Co=256
+
+"if $term == "xterm-256color"
+"  set t_Co=256
+"endif
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -39,10 +44,6 @@ Plugin 'pangloss/vim-javascript'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-"if $term == "xterm-256color"
-"  set t_Co=256
-"endif
-
 syntax on
 set autoindent
 set relativenumber
@@ -69,7 +70,7 @@ inoremap <C-t>     <Esc>:tabnew<CR>
 
 colorscheme gruvbox
 
-let g:airline_theme='dracula'
+let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled = 1
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml"
 let g:NERDTreeDirArrowExpandable = '>'
