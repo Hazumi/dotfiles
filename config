@@ -9,8 +9,10 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+#
 bindsym $mod+o exec google-chrome
 bindsym $mod+i exec atom
+bindsym $mod+m exec
 
 # kill focused window
 bindsym $mod+q kill
@@ -149,6 +151,7 @@ bindsym $mod+t border normal 1
 exec --no-startup-id xsetroot -solid "#282828"
 
 # variables-colors
+set $bgc #282c34
 
 set $base #52438b
 set $green #00b200
@@ -161,6 +164,9 @@ set $lightest #878a92
 set $dark #41356f
 set $darker #272a33
 set $darkest #1c1e25
+
+set $text #afb1b6
+set $highlight #00cc00
 
 set $bg #282828
 
