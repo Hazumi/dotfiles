@@ -11,6 +11,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'dracula/vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mattn/emmet-vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'posva/vim-vue'
 call plug#end()
 
 "if $term == "xterm-256color"
@@ -26,9 +28,11 @@ set relativenumber
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set smartindent
 set laststatus=2
 set cursorline
 set showmatch
+set mouse=a
 
 set termguicolors
 
@@ -47,6 +51,9 @@ nnoremap <C-t>     :tabnew<CR>
 inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
+
+imap pp <Esc>
+inoremap { {<CR>}<Esc>O
 
 set background=dark
 let g:airline_theme='dracula'
