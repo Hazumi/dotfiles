@@ -52,7 +52,7 @@ inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
 
-imap pp <Esc>
+imap hh <Esc>
 inoremap { {<CR>}<Esc>O
 
 set background=dark
